@@ -20,10 +20,12 @@
 		7D95391427C1558600C02D11 /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95391327C1558600C02D11 /* GetCitiesWeather.swift */; };
 		7D95391627C15BB300C02D11 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95391527C15BB300C02D11 /* ListCell.swift */; };
 		7D95391827C15FFF00C02D11 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95391727C15FFF00C02D11 /* DetailVC.swift */; };
-		7D95391A27C1758600C02D11 /* NetworkFetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95391927C1758600C02D11 /* NetworkFetchImage.swift */; };
+		7D95391C27C2221100C02D11 /* AddCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95391B27C2221100C02D11 /* AddCity.swift */; };
+		F1844C26A33B2F32E902C67E /* Pods_MetcastTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E662ABA7A44196DD1C2F5B /* Pods_MetcastTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41332CB4818304FDB61C6D2F /* Pods-MetcastTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetcastTest.release.xcconfig"; path = "Target Support Files/Pods-MetcastTest/Pods-MetcastTest.release.xcconfig"; sourceTree = "<group>"; };
 		7D9538EF27BED3EE00C02D11 /* MetcastTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetcastTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9538F227BED3EE00C02D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D9538F427BED3EE00C02D11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +41,9 @@
 		7D95391327C1558600C02D11 /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
 		7D95391527C15BB300C02D11 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		7D95391727C15FFF00C02D11 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		7D95391927C1758600C02D11 /* NetworkFetchImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchImage.swift; sourceTree = "<group>"; };
+		7D95391B27C2221100C02D11 /* AddCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCity.swift; sourceTree = "<group>"; };
+		A1F2CF4B9290DC9432F37116 /* Pods-MetcastTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetcastTest.debug.xcconfig"; path = "Target Support Files/Pods-MetcastTest/Pods-MetcastTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C9E662ABA7A44196DD1C2F5B /* Pods_MetcastTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetcastTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1844C26A33B2F32E902C67E /* Pods_MetcastTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098E66932BB2432FF37542C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9E662ABA7A44196DD1C2F5B /* Pods_MetcastTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7D9538E627BED3EE00C02D11 = {
 			isa = PBXGroup;
 			children = (
 				7D9538F127BED3EE00C02D11 /* MetcastTest */,
 				7D9538F027BED3EE00C02D11 /* Products */,
+				867132D53C8F23BF256D75F0 /* Pods */,
+				098E66932BB2432FF37542C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +112,9 @@
 				7D95391127BEF4B300C02D11 /* Weather.swift */,
 				7D95390F27BEF0A200C02D11 /* WeatherData.swift */,
 				7D95390D27BEEF4000C02D11 /* NetworkWeatherManager.swift */,
-				7D95391927C1758600C02D11 /* NetworkFetchImage.swift */,
 				7D95391327C1558600C02D11 /* GetCitiesWeather.swift */,
 				7D95391527C15BB300C02D11 /* ListCell.swift */,
+				7D95391B27C2221100C02D11 /* AddCity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +130,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		867132D53C8F23BF256D75F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2CF4B9290DC9432F37116 /* Pods-MetcastTest.debug.xcconfig */,
+				41332CB4818304FDB61C6D2F /* Pods-MetcastTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D95390327BED3EF00C02D11 /* Build configuration list for PBXNativeTarget "MetcastTest" */;
 			buildPhases = (
+				07D24385180D760BFAA7BCB9 /* [CP] Check Pods Manifest.lock */,
 				7D9538EB27BED3EE00C02D11 /* Sources */,
 				7D9538EC27BED3EE00C02D11 /* Frameworks */,
 				7D9538ED27BED3EE00C02D11 /* Resources */,
+				A6B6F1A506878ED94ECB2A62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,13 +207,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07D24385180D760BFAA7BCB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetcastTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B6F1A506878ED94ECB2A62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetcastTest/Pods-MetcastTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetcastTest/Pods-MetcastTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetcastTest/Pods-MetcastTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D9538EB27BED3EE00C02D11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7D9538F327BED3EE00C02D11 /* AppDelegate.swift in Sources */,
-				7D95391A27C1758600C02D11 /* NetworkFetchImage.swift in Sources */,
 				7D95390C27BEEE7D00C02D11 /* Constant.swift in Sources */,
 				7D95391427C1558600C02D11 /* GetCitiesWeather.swift in Sources */,
 				7D95390E27BEEF4000C02D11 /* NetworkWeatherManager.swift in Sources */,
@@ -197,6 +264,7 @@
 				7D95391627C15BB300C02D11 /* ListCell.swift in Sources */,
 				7D95390727BED42F00C02D11 /* ListTableViewController.swift in Sources */,
 				7D95391227BEF4B300C02D11 /* Weather.swift in Sources */,
+				7D95391C27C2221100C02D11 /* AddCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +408,7 @@
 		};
 		7D95390427BED3EF00C02D11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F2CF4B9290DC9432F37116 /* Pods-MetcastTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,6 +437,7 @@
 		};
 		7D95390527BED3EF00C02D11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41332CB4818304FDB61C6D2F /* Pods-MetcastTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

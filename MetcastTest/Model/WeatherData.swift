@@ -18,24 +18,20 @@ struct Info: Decodable {
 }
 
 struct Fact: Decodable {
-    let temp: Int
-//    let icon: Icon
+    let temp: Double
+    let icon: String
     let condition: String
-    let windSpeed: Int
+    let windSpeed: Double
     let pressureMm: Int
     
     enum CodingKeys: String, CodingKey {
         case temp
-//        case icon
+        case icon
         case condition
         case windSpeed = "wind_speed"
         case pressureMm = "pressure_mm"
     }
 }
-//
-//struct Condition: Decodable {
-//
-//}
 
 struct Forecast: Decodable {
     let parts: Parts
@@ -48,7 +44,7 @@ struct Parts: Decodable {
 struct Day: Decodable {
     let tempMin: Int?
     let tempMax: Int?
-    
+
     enum CodingKeys: String, CodingKey {
         case tempMin = "temp_min"
         case tempMax = "temp_max"

@@ -1,0 +1,6 @@
+framework module Pods_MetcastTest {
+  umbrella header "Pods-MetcastTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

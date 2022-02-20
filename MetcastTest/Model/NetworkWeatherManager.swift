@@ -13,7 +13,7 @@ class NetworkWeatherManager {
     
     func fetchWeather(latitude: Double, longitude: Double, completionHandler: @escaping (Weather) -> Void) {
         
-//        let urlString =  "https://api.weather.yandex.ru/v2/forecast?lat=55.75396&lon=37.620393"
+//        let urlString =  "https://api.weather.yandex.ru/v2/forecast?lat=59.93425&lon=37.620393"
         let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=\(latitude)&lon=\(longitude)"
         guard let url = URL(string: urlString) else { return }
         
